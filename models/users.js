@@ -4,6 +4,7 @@ const ObjectId = Schema.ObjectId;
 const { hash } = require("../helpers/password");
 
 // Define the User schema (isian const yang akan disimpan di database)
+// id: buat identifikasi user, email: buat login, password: buat login, googleId: buat login dengan google
 const UserSchema = new Schema(
 	{
 		id: ObjectId,
