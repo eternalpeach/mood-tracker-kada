@@ -5,7 +5,7 @@ const User = require("../models/users");
 const { compare } = require("../helpers/password");
 const { generateToken } = require("../helpers/token");
 
-
+// post
 //register: buat daftar akun baru, dapat token
 Router.post("/register", (req, res, next) => {
 	const { email, password } = req.body || {};
